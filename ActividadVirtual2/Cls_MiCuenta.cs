@@ -56,5 +56,18 @@ namespace ActividadVirtual2
 		{
 			return this.FechaAlta;
 		}
+		
+		public void transaccion(double cantidad,string tipo){
+			if(String.equals(tipo,"deposito"))
+			{
+				saldo=saldo+cantidad;
+			}
+			else if(saldo>cantidad)
+				{
+					saldo=saldo-cantidad;
+				}
+			     else saldo=0;
+			System.Console.Writeln("SU NUEVO SALDO ES : $"+cantidad);
+		}
 	}
 }
