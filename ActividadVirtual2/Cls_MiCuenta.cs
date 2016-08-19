@@ -16,10 +16,45 @@ namespace ActividadVirtual2
 		public Cls_MiCuenta()//Constructor 1
 		{
 		}
-		public Cls_MiCuenta(int nroC,int s,string prop,string fechA)
+		public Cls_MiCuenta(int nroC,int s,string prop,string fechA)//Constructor 2
 		{
-	
+			this.NroCuenta=nroC;
+			this.saldo=s;
+			this.Propietario=prop;
+			this.FechaAlta=fechA;
 		}
-		
+		public void setNroCuenta(int NroC)
+		{
+			this.NroCuenta=NroC;
+			
+		}
+		public void setSaldo(int s)
+		{
+			this.saldo=s;
+		}
+		public void setProp(string p)
+		{
+			this.Propietario=p;
+		}
+		public void setFechaA(string f)
+		{
+			this.FechaAlta=f;
+		}
+		public int getNroCuenta()
+		{
+			return this.NroCuenta;
+		}
+		public int getSaldo()
+		{
+			return this.saldo;
+		}
+		public string getProp()
+		{
+			return this.Propietario;
+		}
+		public string getFechA()
+		{
+			return this.FechaAlta;
+		}
 	}
 }
