@@ -16,6 +16,10 @@ namespace ActividadVirtual2
 		public Cls_MiCuenta()//Constructor 1
 		{
 		}
+		public Cls_MiCuenta(int nroC,int s,string prop,string fechA)
+		{
+	
+		}
 		
 	}
 }
